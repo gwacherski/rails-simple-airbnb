@@ -1,0 +1,10 @@
+<h1><%= @flat.name %></h1>
+
+<p><strong>Address:</strong> <%= @flat.address %></p>
+<p><strong>Description:</strong> <%= @flat.description %></p>
+<p><strong>Price per Night:</strong> <%= @flat.price_per_night %></p>
+<p><strong>Number of Guests:</strong> <%= @flat.number_of_guests %></p>
+
+<%= link_to 'Edit', edit_flat_path(@flat) %> |
+<%= link_to 'Back', flats_path %>
+<%= button_to 'Destroy', flat_path(@flat), method: :delete %>

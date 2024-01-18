@@ -1,0 +1,17 @@
+<h1>Edit Flat</h1>
+
+<%= simple_form_for(@flat) do |form| %>
+
+  <%= form.input :name %>
+  <%= form.input :address %>
+  <%= form.input :description %>
+  <%= form.input :price_per_night %>
+  <%= form.input :number_of_guests %>
+
+  <div class="actions">
+    <%= form.submit 'Save', class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
+<%= link_to 'Show', @flat %> |
+<%= link_to 'Back', flats_path %> |
